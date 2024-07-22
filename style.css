@@ -1,0 +1,92 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#e3f3fd;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right:20px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    width:350px;
+    height: auto;
+}
+
+    .mortgage{
+        width: 100%;
+    }
+
+        form{
+            margin-top:20px;
+            border: 2px solid green;
+        }
+
+        .ammount{
+            display: flex;
+            flex-direction: column;
+        }
+
+            .inp_amm{
+                width: 100%;
+                height:45px;
+                position:relative;
+            }
+            #ammount{
+                border: 2px solid #6b94a8;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+                #p_amm{
+                    text-align: center;
+                    line-height: 45px;
+                    /* vertical-align:middle; */
+                    /* align-items: center;
+                    justify-content: center; */
+                    /*display: block;*/
+                    width: 41px;
+                    height: 41px;
+                    color:#4e6e7e;
+                    font-weight: 900;
+                    position: absolute;
+                    top:2px;
+                    left: 2px;
+                    border-radius: 5px 0 0 5px ;
+                    background-color:#e3f3fd80;
+                }
+
+.colors{
+    /* primarne */
+    color:#d7da2f;
+    color:#d73328;
+    /* neutralne */
+    color:#ffffff;
+    color:#e3f3fd;
+    color:#9abed5;
+    color:#6b94a8;
+    color:#4e6e7e;
+    color:#122f3f;
+
+}

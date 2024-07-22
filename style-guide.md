@@ -19,7 +19,7 @@ The designs were created to the following widths:
 ### Neutral
 
 - White: hsl(0, 0%, 100%) #ffffff
-- Slate 100: hsl(202, 86%, 94%) hsl(202, 86%, 94%)
+- Slate 100: hsl(202, 86%, 94%) #e3f3fd
 - Slate 300: hsl(203, 41%, 72%) #9abed5
 - Slate 500: hsl(200, 26%, 54%) #6b94a8
 - Slate 700: hsl(200, 24%, 40%) #4e6e7e
