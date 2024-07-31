@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,35 +15,50 @@
         <section class="mortgage">
             <h3>Mortgage Calculator</h3>
             <p>Clear all</p>
-            
+
             <form>
                 <div class="ammount">
-                    <p>Mortgage ammount</p>
+                    <p>Mortgage Ammount</p>
                     <div class="inp_amm">
-                        <input type="text" id="ammount"><p id="p_amm">£</p>
+                        <input class="amm_pad" type="text" id="ammount">
+                        <p class="inp" id="p_amm">£</p>
                     </div>
-                    
+
                 </div>
 
                 <div class="term">
-                    <p>Mortgage term</p>
-                    <input type="text" id="term"><p id="p_term">years</p>
+                    <p>Mortgage Term</p>
+                    <div class="inp_trm">
+                        <input class="trm_pad" type="text" id="term">
+                        <p class="inp" id="p_trm">years</p>
+                    </div>
+
                 </div>
 
                 <div class="interest">
-                    <p>Interest rate</p>
-                    <input type="text" id="interest"><p id="p_percent">%</p>
+                    <p>Interest Rate</p>
+                    <div class="inp_int">
+                        <input class="int_pad" type="text" id="interest">
+                        <p class="inp" id="p_int">%</p>
+                    </div>
                 </div>
 
                 <div class="type">
                     <p>Mortgage type</p>
-                      <input type="radio" id="repay" name="mort_type" value="Repayment">
-                      <label for="repay">Repayment</label><br>
-                      <input type="radio" id="interes" name="mort_type" value="Interest Only">
-                      <label for="interes">Interest Only</label>
+                    <div class="radio" id="repay_div">
+                        <input class="inp_radio checked" type="radio" id="repay" name="mort_type" value="Repayment">
+                        <label class="inp_radio" for="repay">Repayment</label><br>
+                    </div> 
+
+                    <div class="radio" id="interest_div">
+                        <input class="inp_radio checked" type="radio" id="interes" name="mort_type" value="Interest Only">
+                        <label class="inp_radio" for="interes">Interest Only</label>
+                    </div>
+                     
                 </div>
 
-                <button type="submit"><img src="./img/icon-calculator.svg" alt="" srcset="">Calculate Repayments</button>
+                <button type="submit"><img src="./img/icon-calculator.svg" alt="" srcset="">Calculate
+                    Repayments</button>
             </form>
         </section>
 
@@ -153,7 +169,8 @@
 
             <article class="output">
                 <h3>Your results</h3>
-                <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
+                <p>Your results are shown below based on the information you provided. To adjust the results, edit the
+                    form and click “calculate repayments” again.</p>
                 <section>
                     <div class="monlty_rep">
                         <h5>Your monthly repayments</h5>
@@ -167,6 +184,7 @@
             </article>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
