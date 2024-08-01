@@ -31,18 +31,22 @@ body{
     padding-left: 20px;
     padding-right:20px;
     background-color: #ffffff;
-    border: 2px solid black;
     width:350px;
     height: auto;
 }
 
+    #clear{
+        margin-top: 10px;
+        display: block;
+        width:50px;
+        border-bottom: 1px dotted #9abed5;
+    }
     .mortgage{
         width: 100%;
     }
 
         form{
             margin-top:20px;
-            border: 2px solid green;
         }
 
         .ammount, .term, .interest{
@@ -52,7 +56,6 @@ body{
         }
 
             .inp_amm, .inp_trm, .inp_int{
-                margin-top: 10px;
                 width: 100%;
                 height:40px;
                 position:relative;
@@ -103,20 +106,20 @@ body{
                 #p_int{
                     top:1px;
                     right: 1px;
-                }
-    .type{
-        border: 1px solid blue;
-    }       
+                }     
         .radio{
             position: relative;
-            /* display: flex;
-            flex-direction: row; */
             width:100%;
             height:40px;
             border: 1px solid #6b94a8;
             border-radius: 5px;
             line-height: 40px;
-            /* background-color: #d73328; */
+        }
+
+        .paragraf{
+            margin-bottom: 10px;
+            color:#4e6e7e;
+            font-size: 0.8rem;
         }
 
         input[type='radio']{
@@ -132,29 +135,24 @@ body{
             left:50px;
         }
 
-        /* .checked{
-            width:20px;
-            height: 20px;
-            background-color: #d7da2f;
-        } */
-
         .checked {
             accent-color:  #d7da2f40;
           }
 
-        .radio .checked:checked~#ring1{
+        .radio .checked:checked~.ring{
             position:absolute;;
             display: block;
-            border: 3px solid white;
-            top:11.5px;
-            left:31.5px;
-            width:17.5px;
-            height: 17.5px;
-            border-radius: 12.5px;
+            border: 3.5px solid white;
+            top:11px;
+            left:31px;
+            width:18px;
+            height: 18px;
+            border-radius: 50%;
         } 
 
         .pozadina{
             background: #d7da2f40;
+            border-color:#d7da2f;
         } 
 
         .inp_radio{
@@ -162,6 +160,90 @@ body{
             margin:0;
             margin-left:20px;
         }
+
+        button{
+            position: relative;
+            font-size: 1rem;
+            font-weight: 700;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 40px;
+            background-color:#d7da2f;
+            border-radius: 20px;
+            border-color: #434405;
+            line-height: 40px;
+            margin-bottom: 20px;
+            }
+            button p{
+                margin-left: 10px;
+                position: relative;
+                top:2px;
+            }
+
+.result{
+    background-color: #122f3f;
+    width: calc(100% + 40px);
+    height:100%;
+    position: relative;
+    left:-20px;
+    color: #e3f3fd;
+}
+    .description{
+        display: none;
+        margin-top: 10px;
+        /* display: flex; */
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .text h3{
+            font-size: 1.3rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .text p{
+            text-align: center;
+            color: #9abed5;
+            font-size:0.85rem;
+            margin-bottom: 20px;
+        }
+
+        .output{
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            padding: 20px;
+        }
+            .output>h3{
+                margin-bottom: 20px;
+            }
+
+            .output p{
+                font-size: 0.8rem;
+                color:#9abed5;
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+            
+            .printout{
+                border-radius: 3px;
+                background-color:#0b2330;
+                box-shadow: 0px -3px 0px 0px #D7DA2F;
+            }
 .colors{
     /* primarne */
     color:#d7da2f;

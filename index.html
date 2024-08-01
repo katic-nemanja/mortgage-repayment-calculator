@@ -14,11 +14,11 @@
     <div class="content">
         <section class="mortgage">
             <h3>Mortgage Calculator</h3>
-            <p>Clear all</p>
+            <p class="paragraf" id="clear">Clear all</p>
 
             <form>
                 <div class="ammount">
-                    <p>Mortgage Ammount</p>
+                    <p class="paragraf">Mortgage Ammount</p>
                     <div class="inp_amm">
                         <input class="amm_pad" type="text" id="ammount">
                         <p class="inp" id="p_amm">£</p>
@@ -26,46 +26,49 @@
 
                 </div>
 
-                <div class="term">
-                    <p>Mortgage Term</p>
-                    <div class="inp_trm">
-                        <input class="trm_pad" type="text" id="term">
-                        <p class="inp" id="p_trm">years</p>
+                <div id="conditions">
+                    <div class="term">
+                        <p class="paragraf">Mortgage Term</p>
+                        <div class="inp_trm">
+                            <input class="trm_pad" type="text" id="term">
+                            <p class="inp" id="p_trm">years</p>
+                        </div>
+    
                     </div>
-
-                </div>
-
-                <div class="interest">
-                    <p>Interest Rate</p>
-                    <div class="inp_int">
-                        <input class="int_pad" type="text" id="interest">
-                        <p class="inp" id="p_int">%</p>
+    
+                    <div class="interest">
+                        <p class="paragraf">Interest Rate</p>
+                        <div class="inp_int">
+                            <input class="int_pad" type="text" id="interest">
+                            <p class="inp" id="p_int">%</p>
+                        </div>
                     </div>
                 </div>
+                
 
                 <div class="type">
-                    <p>Mortgage type</p>
+                    <p class="paragraf">Mortgage Type</p>
                     <div class="radio" id="repay_div">
                         <input class="inp_radio checked" type="radio" id="repay" name="mort_type"
-                            value="Repayment"><span id="ring1"></span>
+                            value="Repayment"><span class="ring" id="ring1"></span>
                         <label class="inp_radio" for="repay">Repayment</label><br>
                     </div> 
 
                     <div class="radio" id="interest_div">
                         <input class="inp_radio checked" type="radio" id="interes" name="mort_type"
-                            value="Interest Only"><span id="ring2"></span>
+                            value="Interest Only"><span class="ring" id="ring2"></span>
                         <label class="inp_radio" for="interes">Interest Only</label>
                     </div>
                      
                 </div>
 
-                <button type="submit"><img src="./img/icon-calculator.svg" alt="" srcset="">Calculate
-                    Repayments</button>
+                <button type="submit"><img src="./img/icon-calculator.svg" alt="" srcset=""><p>Calculate
+                    Repayments</p></button>
             </form>
         </section>
 
         <section class="result">
-            <article>
+            <article class="description">
                 <header>
                     <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" fill="none" viewBox="0 0 192 192">
                         <path fill="#fff"
@@ -173,8 +176,8 @@
                 <h3>Your results</h3>
                 <p>Your results are shown below based on the information you provided. To adjust the results, edit the
                     form and click “calculate repayments” again.</p>
-                <section>
-                    <div class="monlty_rep">
+                <section class="printout">
+                    <div class="montly_rep">
                         <h5>Your monthly repayments</h5>
                         <h1 id="monthly_res">1000</h1>
                     </div>
