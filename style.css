@@ -4,6 +4,8 @@ html{
     padding: 0;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 16px;
+    font-weight: 700;
+    color:#122f3f;
 }
 
 *, *::after, *::before{
@@ -106,6 +108,7 @@ body{
         border: 1px solid blue;
     }       
         .radio{
+            position: relative;
             /* display: flex;
             flex-direction: row; */
             width:100%;
@@ -116,13 +119,43 @@ body{
             /* background-color: #d73328; */
         }
 
-        /* .checked:checked + label{
-            background-color: #d73328;
+        input[type='radio']{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top:10px;
+            left:10px;
+        }
+
+        label.inp_radio{
+            position: relative;
+            left:50px;
+        }
+
+        /* .checked{
+            width:20px;
+            height: 20px;
+            background-color: #d7da2f;
         } */
 
+        .checked {
+            accent-color:  #d7da2f40;
+          }
+
+        .radio .checked:checked~#ring1{
+            position:absolute;;
+            display: block;
+            border: 3px solid white;
+            top:11.5px;
+            left:31.5px;
+            width:17.5px;
+            height: 17.5px;
+            border-radius: 12.5px;
+        } 
+
         .pozadina{
-            background-color: #d7da2f;
-        }
+            background: #d7da2f40;
+        } 
 
         .inp_radio{
             padding:0;
